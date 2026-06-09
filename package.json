@@ -1,0 +1,21 @@
+{
+  "name": "tp9-kafka",
+  "version": "1.0.0",
+  "description": "TP Kafka 4.2 avec Node.js et PostgreSQL",
+  "main": "api.js",
+  "scripts": {
+    "producer": "node producer.js",
+    "consumer": "node consumer.js",
+    "api": "node api.js",
+    "dev": "concurrently \"npm run producer\" \"npm run consumer\" \"npm run api\""
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4",
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
